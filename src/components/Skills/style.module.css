@@ -1,0 +1,41 @@
+@import '../../sass/_variables.scss';
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 200px;
+  align-items: center;
+}
+
+.skills__main_title {
+  font: var(--font-l-bold);
+  color: var(--accent-color);
+  margin-block-end: 50px;
+}
+
+.skills__main_title:nth-of-type(2) {
+  margin-block-start: clamp(2.5rem, -1.0211rem + 15.0235vw, 12.5rem);
+}
+
+.skills__main_subtitle {
+  color: var(--main-text-color);
+  font: var(--font-m-regular);
+  margin-block-end: clamp(2.5rem, 0.0792rem + 10.3286vw, 9.375rem);
+}
+
+.skills__icons_container {
+  display: grid;
+  inline-size: 100%;
+  gap: 10%;
+  grid-template-columns: repeat(6, 8.3%);
+  align-items: center;
+  justify-items: center;
+
+}
+
+@media screen and (max-width: 1276px) {
+  .skills__icons_container {
+    grid-template-columns: repeat(4, 20%);
+    gap: 5%;
+  }
+}

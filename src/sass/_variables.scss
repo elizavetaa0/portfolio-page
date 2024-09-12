@@ -1,0 +1,57 @@
+@import './fonts/fonts.scss';
+
+:root {
+  /* fonts */
+  --font-family-main: 'Poppins', Arial, sans-serif;
+  --font-family-menu: 'DMSans', Arial, sans-serif;
+
+  /* font weight */
+  --font-weight-bold: 700;
+	--font-weight-medium: 500;
+	--font-weight-regular: 400;
+  --font-weight-light: 300;
+
+  /* line height */
+  --font-line-medium: 26px;
+  --font-line-large: 70px;
+
+  /* font xxxxs */
+  --font-size-xxxxs: 14px;
+  --font-xxxxs-light: var(--font-weight-light) var(--font-size-xxxxs) / var(--font-line-medium) var(--font-family-main);
+
+  /* font xxxs */
+  --font-size-xxxs: 16px;
+  --font-xxxs-regular: var(--font-weight-regular) var(--font-size-xxxs) / var(--font-line-medium) var(--font-family-main);
+
+  /* font xxs */
+  --font-size-xxs: 18px;
+  --font-xxs-regular: var(--font-weight-regular) var(--font-size-xxs) / var(--font-line-medium) var(--font-family-menu);
+  --font-xxs-light: var(--font-weight-light) var(--font-size-xxs) / var(--font-line-medium) var(--font-family-main);
+
+  /* font xs */
+  --font-size-xs: 20px;
+  --font-xs-medium: var(--font-weight-medium) var(--font-size-xs) / var(--font-line-medium) var(--font-family-menu);
+
+  /* font s */
+  --font-size-s: 28px;
+  --font-s-medium: var(--font-weight-medium) var(--font-size-s) / var(--font-line-medium) var(--font-family-main);
+
+  /* font m */
+  --font-size-m: 32px;
+  --font-m-regular: var(--font-weight-regular) var(--font-size-m) / var(--font-line-medium) var(--font-family-main);
+
+  /* font l */
+  --font-size-l: 48px;
+  --font-l-bold: var(--font-weight-bold) var(--font-size-l) / var(--font-line-medium) var(--font-family-main);
+
+  /* font xl */
+  --font-size-xl: 58px;
+  --font-xl-bold: var(--font-weight-bold) var(--font-size-xl) / var(--font-line-large) var(--font-family-main);
+
+  /* colors */
+  --main-text-color: #666666;
+  --accent-color: #42446E;
+  --card-title-color: #000000;
+  --main-text-hover: #3c3c3c;
+  --accent-color-hover: #151521;
+}

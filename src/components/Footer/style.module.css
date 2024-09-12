@@ -1,0 +1,101 @@
+@import '../../sass/_variables.scss';
+
+.footer__container_primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-end: 50px;
+  border-block-end: 2px solid #666666;
+  margin-block-end: 60px;
+}
+
+.footer__contacts_container {
+  display: flex;
+  gap: 30px;
+  transition: color 0.5s ease-in-out;
+}
+
+.footer__contacts_container a {
+  transition: color 0.5s ease-in-out;
+}
+
+.footer__contacts_container a:hover {
+  color: #3c3c3c;
+}
+
+.footer__socials__container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__container_secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 170px;
+  margin-block-end: 60px;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 52px;
+  transition: color 0.5s ease-in-out;
+}
+
+.footer__menu a {
+  font: var(--font-xxs-regular);
+  color: var(--accent-color);
+  transition: color 0.5s ease-in-out;
+}
+
+.footer__menu a:hover {
+  color: var(--accent-color-hover);
+}
+
+.footer__description {
+  font: var(--font-xxs-regular);
+  color: var(--main-text-color);
+}
+
+.footer__description span:first-of-type {
+  background: linear-gradient(90deg, #7368D4 0%, #9A4Ac6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.footer__description span:nth-of-type(2) {
+  background: linear-gradient(90deg, #B139BE 0%, #C12DB8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.footer__description span:nth-of-type(3) {
+  background: linear-gradient(90deg, #CD24B4 0%, #E610AB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 1276px) {
+  .footer__menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 757px) {
+  .footer__contacts_container,
+  .footer__socials__container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+}

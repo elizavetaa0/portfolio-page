@@ -1,0 +1,42 @@
+@import './sass/_variables.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-inline-size: 1440px;
+  min-inline-size: 375px;
+  font-family: var(--font-family-main), sans-serif;
+  font-weight: 400;
+  margin-inline: clamp(1.25rem, -2.4912rem + 15.9624vw, 11.875rem);;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-inline-size: 100%;
+  height: auto;
+  display: block;
+}

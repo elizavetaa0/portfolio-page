@@ -1,0 +1,44 @@
+@import '../../sass/_variables.scss';
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-inline-size: 1200px;
+  margin-block-start: clamp(3.125rem, -0.6162rem + 15.9624vw, 13.75rem);
+  margin-block-end: clamp(4.375rem, -1.787rem + 26.2911vw, 21.875rem);
+}
+
+.main__title {
+  font: var(--font-xl-bold);
+  color: var(--accent-color);
+}
+
+.main__title_accent {
+  background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.main__img {
+  inline-size: 350px;
+  block-size: 350px;
+  border-radius: 50%;
+  padding: 9px;
+  background: linear-gradient(180deg, #E70FAA 0%, #13B0F5 100%);
+}
+
+.main__img img {
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 757px) {
+  .main__container {
+    flex-direction: column;
+  }
+}
